@@ -1,8 +1,9 @@
 !!!
 html
   head
-    link(rel="stylesheet", href="/main.css")
+    link(rel="stylesheet", href="/main.css?2")
   body
     != partial("_shared/header")
-    != yield
+    #content
+      != yield
     != partial("_shared/footer")
